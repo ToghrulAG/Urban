@@ -1,0 +1,337 @@
+@font-face {
+  font-family: "ScopeOne";
+  src: url(../assets/font/ScopeOne-Regular.ttf);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+#section1 {
+  height: 100vh;
+  background-image: url(../assets/images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#section1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 3;
+  top: 0;
+}
+#section1 header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+#section1 header h1 {
+  font: 300 18px/1.65 "ScopeOne";
+  color: #FFFFFF;
+}
+#section1 header h1 span {
+  color: #3498db;
+  font-size: 22px;
+}
+#section1 header .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#section1 header .icons i {
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+#section1 .section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: calc(100vh - 100px);
+}
+#section1 .section1 h1 {
+  font: 700 4rem/1.5 "ScopeOne";
+  color: #FFFFFF;
+  text-align: center;
+}
+#section1 .section1 p {
+  font: 500 1.75rem/1.5 "ScopeOne";
+  color: #FFFFFF;
+  text-align: center;
+}
+#section1 .section1 button {
+  background-color: #3498db;
+  width: 165px;
+  height: 56px;
+  border: 1px solid #3498db;
+  color: #FFFFFF;
+  font: 300 18px/1.65 "ScopeOne";
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#section2 {
+  background-color: #fafafa;
+  padding: 50px 0;
+}
+#section2 .section2 {
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+#section2 .section2 .img {
+  width: 30%;
+  border-radius: 50%;
+  overflow: hidden;
+  outline: 1px solid #999999;
+  outline-offset: 8px;
+}
+#section2 .section2 .img img {
+  width: 100%;
+  height: 100%;
+}
+#section2 .section2 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+#section2 .section2 .content h1 {
+  font: 500 1.75rem/1.5 "ScopeOne";
+  color: #000000;
+}
+#section2 .section2 .content p {
+  font: 300 15px/1.65 "ScopeOne";
+  color: #999999;
+}
+#section2 .section2 .content button {
+  background-color: #3498db;
+  width: 165px;
+  height: 56px;
+  border: 1px solid #3498db;
+  color: #FFFFFF;
+  font: 300 18px/1.65 "ScopeOne";
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#section3 {
+  background-color: #3498db;
+  padding: 50px 0;
+}
+#section3 .section2 {
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+#section3 .section2 .img {
+  width: 30%;
+  border-radius: 50%;
+  overflow: hidden;
+  outline: 1px solid #999999;
+  outline-offset: 8px;
+}
+#section3 .section2 .img img {
+  width: 100%;
+  height: 100%;
+}
+#section3 .section2 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+#section3 .section2 .content h1 {
+  font: 500 1.75rem/1.5 "ScopeOne";
+  color: #FFFFFF;
+}
+#section3 .section2 .content p {
+  font: 300 15px/1.65 "ScopeOne";
+  color: rgb(204, 198, 198);
+}
+#section3 .section2 .content button {
+  background-color: #FFFFFF;
+  width: 165px;
+  height: 56px;
+  border: 1px solid #FFFFFF;
+  color: #3498db;
+  font: 300 18px/1.65 "ScopeOne";
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#section4 {
+  background-color: #fafafa;
+}
+#section4 .section4 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+#section4 .section4 .section4-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#section4 .section4 .section4-top h1 {
+  font: 700 4rem/1.5 "ScopeOne";
+  font-size: 45px;
+  color: #000000;
+  text-align: center;
+}
+#section4 .section4 .section4-top p {
+  font: 300 18px/1.65 "ScopeOne";
+  font-size: 20px;
+  color: #999999;
+  text-align: center;
+}
+#section4 .section4 .section4-bottom {
+  display: flex;
+  gap: 5%;
+}
+#section4 .section4 .section4-bottom .card {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+#section4 .section4 .section4-bottom .card .img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  outline: 1px solid #999999;
+  outline-offset: 8px;
+  overflow: hidden;
+}
+#section4 .section4 .section4-bottom .card .img img {
+  width: 100%;
+  height: 100%;
+}
+#section4 .section4 .section4-bottom .card p {
+  color: #999999;
+  font: 300 18px/1.65 "ScopeOne";
+  text-align: center;
+}
+#section4 .section4 .section4-bottom .card button {
+  background-color: #3498db;
+  width: 165px;
+  height: 56px;
+  border: 1px solid #3498db;
+  color: #FFFFFF;
+  font: 300 18px/1.65 "ScopeOne";
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  background: #FFFFFF;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  height: 30vh;
+}
+footer .footer .text p {
+  color: #999999;
+  font: 300 15px/1.65 "ScopeOne";
+}
+footer .footer .text p span {
+  color: #000000;
+  font-weight: 700;
+}
+footer .footer .icons {
+  display: flex;
+  gap: 100px;
+}
+footer .footer .icons .icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #999999;
+  outline: 1px solid #999999;
+  outline-offset: 4px;
+}
+footer .footer .icons .icon i {
+  font-size: 30px;
+}

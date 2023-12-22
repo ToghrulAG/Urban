@@ -1,0 +1,179 @@
+@import '_variables';
+@import '_base';
+@import '_mixin';
+
+// Header Part Start 
+#section1{
+    height: 100vh;
+    background-image: url(../assets/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        z-index: 3;
+        top: 0;
+    }
+
+    header{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        h1{
+            font: $font-md;
+            color: $white;
+            span{
+                color: $blue;
+                font-size: 22px;
+            }
+        }
+        .icons{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            i{
+                font-weight: 600;
+                font-size: 18px;
+                color: $white;
+            }
+        }
+    }
+    .section1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        height: calc(100vh - 100px);
+        h1{
+            font: $font-xl;
+            color: $white;
+            text-align: center;
+        }
+        p{
+            font: $font-lg;
+            color: $white;
+            text-align: center;
+        }
+        button{
+            @include button($blue, $white);
+        }
+    }
+}
+// Header Part Finish 
+
+#section2{
+    @include section($bg1, $black, $blue, $white, $text-color);
+}
+#section3{
+    @include section($blue, $white, $white, $blue, rgb(204, 198, 198));
+}
+#section4{
+    background-color: $bg1;
+    .section4{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        .section4-top{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h1{
+                font: $font-xl;
+                font-size: 45px;
+                color: $black;
+                text-align: center;
+            }
+            p{
+                font: $font-md;
+                font-size: 20px;
+                color: $text-color;
+                text-align: center;
+            }
+        }
+        .section4-bottom{
+            display: flex;
+            gap: 5%;
+            .card{
+                width: calc((100% - 2 * 5%) / 3);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+                .img{
+                    width: 350px;
+                    height: 350px;
+                    border-radius: 50%;
+                    outline: 1px solid $text-color;
+                    outline-offset: 8px;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                p{
+                    color: $text-color;
+                    font: $font-md;
+                    text-align: center;
+                }
+                button{
+                    @include button($blue, $white);
+                }
+            }
+
+        }
+    }
+}
+
+footer{
+    background: $white;
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        height: 30vh;
+        .text{
+            p{
+                color: $text-color;
+                font: $font-sm;
+                span{
+                    color: $black;
+                    font-weight: 700;
+                }
+            }
+        }
+        .icons{
+            display: flex;
+            gap: 100px;
+            .icon{
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 1px solid $text-color;
+                outline: 1px solid $text-color;
+                outline-offset: 4px;
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
